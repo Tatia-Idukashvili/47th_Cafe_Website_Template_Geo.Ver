@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47th Cafe Website Template</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="brand-area">
+            <a href="./index.html">
+                <img src="./Media/Logo.png" alt="website-logo" width="100px">
+            </a>
+        </div>
+        <div class="burger-menu">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="./index.html"><li>მთავარი</li></a>
+                <a href="./this-is-us.html"><li>ჩვენს შესახებ</li></a>
+                <a href="./menu.html"><li>მენიუ</li></a>
+                <a href="./order-online.html"><li>ონლაინ შეკვეთა</li></a>
+                <a href="./contact-us.html"><li>კონტაქტი</li></a>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <a href="./index.html"><li>მთავარი</li></a>
+                    <a href="./this-is-us.html"><li>ჩვენს შესახებ</li></a>
+                    <a href="./menu.html"><li>მენიუ</li></a>
+                    <a href="./order-online.html"><li>ონლაინ შეკვეთა</li></a>
+                    <a href="./contact-us.html"><li>კონტაქტი</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="title">
+        <h1>ჩვენს შესახებ</h1>
+        <h4>ჩვენ გვჯერა რომ მყუდრო გარემო, საუცხოო გემო და სიყვარულით დამზადებული საკვები ბედნიერების საწინდარია. <br>
+        მობრძანდით ჩვენთან და დააგემოვნეთ კერძები, რომელიც სიყვარულით მზადდება სპეციალურად თქვენთვის.</h4>
+    </div>
+
+    <article class="the-best-bite">
+        <div class="image-container">
+            <img src="./Media/The-best-bite.jpg" alt="Salad">
+        </div>
+        <div class="bite">
+            <div class="bite-text" id="bt2">
+                <h2>გამორჩეული, ორგანული, გემრიელი</h2>
+        
+                <p>სპეციალურად მოწვეული შეფები შემოგთავაზებენ კერძებს <br>
+                მსოფლიო სამზარეულოდან. ჩვენი მიზანია ყველა გემოვნების <br>
+                მომხმარებელს შევთავაზოთ მათზე მორგებული მენიუ.</p>
+    
+                <a href="./menu.html"><button>მენიუ</button></a>        
+            </div>
+        </div>
+    </article>
+    
+    <div class="banner">
+        <p>კერძები საიდუმლო ინგრედიენტების გარეშე</p>
+    </div>
+
+    <article class="the-best-bite">
+        <div class="bite">
+            <div class="bite-text">
+                <h2>სიამოვნება თქვენს <br>
+                თეფშზე.</h2>
+        
+                <p>ჩვენს კერძებს არ სჭირდებათ საიდუმლო ინგრედიენტები, <br>
+                რადგან ისინი მზადდება სიყვარულით თქვენს თვალწინ.</p>
+    
+                <a href="./index.html#drop-by"><button>გვესტუმრეთ</button></a>        
+            </div>
+        </div>
+        <div class="image-container ic2">
+            <img src="./Media/Chefs-pic.jpg" alt="Chefs">
+        </div>
+    </article>
+
+    <footer>
+        <div class="ftr">
+            <h4>სიახლეები</h4>
+            <p>მიიღეთ სიახლეები ჩვენი კაფისგან.</p>
+
+            <div class="input">   
+                <label for="">მეილი*</label> <br>
+                <input type="text"> <br>
+    
+                <button>შემოგვიერთდით</button>    
+            </div>
+        </div>
+        <div class="ftr ftr1">
+            <h4>დაგვიკავშირდით</h4>
+
+            <p>123-456-7890 <br>
+            info@mysite.com</p>
+
+            <p>იან ჰომერის N5 <br>
+            თბილისი, საქართველო</p>
+        </div>
+        <div class="ftr ftr2">
+            <a href="https://www.instagram.com/wix/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/wix" target="_blank">Facebook</a>
+            <a href="https://x.com/wix" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
+    <script src="./Javascript Files/responsive_header.js"></script>
+    <script src="./Javascript Files/Scroll_to_top_btn.js"></script>
+</body>
+</html>

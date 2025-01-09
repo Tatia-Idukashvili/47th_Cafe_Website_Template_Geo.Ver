@@ -1,0 +1,862 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Home Page */
+header{
+    background-color: rgb(247,229,210);
+    color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 0 70px;
+    font-size: 16px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+li{
+    list-style-type: none;
+    font-family: sans-serif;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: rgb(96,105,93);
+    transition: 0.5s;
+}
+.burger-menu{
+    display: none;
+}
+.burger-menu span {
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 70px;
+    top: 0;
+    background-color: rgba(255, 237, 216, 0.925);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    left: 40px;
+}
+.overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(96,105,93);
+    display: block;
+    transition: 0.3s;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.main-of-home-page{
+    position: relative;
+    margin-top: 90px;
+    background-image: url("./Media/Main\ Image.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.go-to-spot{
+    position: absolute;
+    bottom: 170px;
+    left: 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.go-to-spot p{
+    font-size: 20px;
+}
+.go-to-spot h1{
+    font-size: 70px;
+}
+.go-to-spot button{
+    background-color: transparent;
+    width: 170px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.go-to-spot button:hover{
+    background-color: rgb(96,105,93);
+    transition: 0.5s;
+}
+.gts-buttons{
+    display: flex;
+    gap: 20px;
+}
+.sales-board{
+    height: 60px;
+    background-color: rgb(96,105,93);
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 17px;
+}
+.sales-board span{
+    padding: 40px;
+}
+.eat{
+    display: flex;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+.T{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.text, .photo{
+    height: 590px;
+    width: 758px;
+}
+.text h2{
+    font-size: 70px;
+}
+.text h4{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.text p{
+    line-height: 25px;
+}
+.text button{
+    font-size: 16px;
+    padding: 14px 40px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+.text button:hover{
+    border: 1px solid rgb(96,105,93);
+    background-color: rgb(96,105,93);
+    color: white;
+    transition: 0.4s;
+}
+#drop-by{
+    height: 447px;
+    background-color: rgb(251,242,232);
+    text-align: center;
+    scroll-margin-top: 100px;
+}
+#drop-by h2{
+    font-size: 60px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.vr{
+    width: 0.5px;            
+    height: 170px;         
+    background-color: black;
+}
+.AAOH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+}
+.AAOH h4{
+    font-size: 27px;
+    font-weight: lighter;
+}
+.AAOH p{
+    line-height: 28px;
+}
+.adr{
+    line-height: 70px;
+}
+.mini-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.mini-gallery > div {
+    display: flex;
+    gap: 0;
+}
+.mini-gallery img{
+    transition: transform 0.6s ease;
+    object-fit: cover;
+    cursor: pointer;
+    width: 303.9px;
+    height: 404px;
+}
+.mini-gallery img:hover{
+    transform: scale(0.9);
+}
+footer{
+    background-color: rgb(64,77,60);
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ftr{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 200px;
+}
+.ftr h4{
+    font-size: 27px;
+}
+.ftr a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.ftr1, .ftr2{
+    width: 300px;
+}
+.ftr1 p{
+    line-height: 30px;
+}
+.input input{
+    height: 35px;
+    width: 343px;
+    background-color: rgb(64,77,60);
+    border: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+.input button{
+    padding: 9px 35px;
+    background-color: rgb(64,77,60);
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.input button:hover{
+    background-color: rgb(85, 102, 80);
+    transition: 0.3s;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: rgb(96,105,93); 
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+#myBtn:hover {
+    background-color: white;
+    color: rgb(96,105,93);
+    border: 1px solid rgb(96,105,93);
+    transition: 0.3s;
+}
+/* This is us page */
+.title{
+    height: 450px;
+    background-color: rgb(251,242,232);
+    color: black;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;    
+    gap: 20px;
+}
+.title h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.title h4{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 40px;
+}
+.the-best-bite{
+    display: flex;
+    height: 650px;
+}
+.bite{
+    width: 761px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bite-text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#bt2{
+    padding-left: 100px;
+}
+.image-container img{
+    width: 758px;
+    height: 650px;
+}
+.bite h2{
+    font-size: 50px;
+}
+.bite p{
+    line-height: 30px;
+}
+.bite button{
+    font-size: 16px;
+    padding: 14px 40px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+.bite button:hover{
+    border: 1px solid rgb(96,105,93);
+    background-color: rgb(96,105,93);
+    color: white;
+    transition: 0.4s;
+}
+.banner{
+    height: 149px;
+    background-color: rgb(96,105,93);
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Menu */
+.menu-title{
+    height: 300px;
+    background-color: rgb(251,242,232);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;    
+    gap: 20px;
+}
+.menu-title h1{
+    font-size: 60px;
+    margin-top: 90px;
+}
+.menu-title p{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 40px;
+}
+.menu{
+    height: 1400px;
+}
+.menu h2{
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 50px 0;
+}
+.breakfast{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dish {
+    opacity: 0; 
+    animation: fadeIn 0.8s ease-in forwards;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.br-row .dish:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.br-row .dish:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.br-row .dish:nth-child(3) {
+    animation-delay: 0.3s;
+}
+@keyframes slideIn {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+.divider-line::before,
+.divider-line::after {
+    transform: scaleX(0); 
+    animation: slideIn 0.6s ease-out forwards; 
+}
+.icon {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in forwards;
+    animation-delay: 0.5s;
+}
+.br-row{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.divider-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    position: relative;
+}
+.divider-line::before,
+.divider-line::after {
+    content: '';
+    width: 40%;
+    height: 2px;
+    background: rgb(247, 229, 210);
+    margin: 0 10px;
+}
+.icon {
+    font-size: 24px;
+    color: rgb(155,155,155);
+}
+/* Contact-us page */
+.contact {
+    height: 609px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 0.5px; 
+    height: 440px; 
+    background-color: black; 
+    left: 50%; 
+    top: 20%;
+    transform: translateX(-50%);
+}
+.contact-forms {
+    padding: 150px;
+    box-sizing: border-box;
+}
+.contact-forms,
+.contact-info {
+    width: 50%;
+    height: 100%;
+}
+.contact-forms > div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.in {
+    display: flex;
+    flex-direction: column;
+}
+.in label{
+    margin-bottom: 7px;
+    font-weight: lighter;
+}
+.in input,
+.in textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.contact-forms > div > div:first-child {
+    display: flex;
+    gap: 15px; 
+}
+.contact-forms > div > div:first-child .in {
+    flex: 1;
+}
+textarea {
+    resize: none;
+    height: 130px; 
+}
+.contact-forms button {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(96,105,93);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.contact-forms button:hover {
+    background-color: white;
+    color: rgb(96,105,93);
+    transition: 0.5s;
+    border: 1px solid rgb(96,105,93);
+}
+.contact-info{
+    padding-top: 155px;
+    padding-left: 120px;
+}
+.par{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.box{
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.box h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.sc{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+.sc a{
+    color: black;
+}
+.box p{
+    line-height: 30px;
+}
+.par-1{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Home Page */
+    header{
+        position: sticky;
+    }
+    header a:hover{
+        color: rgb(27, 27, 27);
+    }
+    .brand-area a{
+        margin-left: -20px;
+    }
+    .navigation{
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .burger-menu span {
+        font-size: 36px;
+        color: black;
+        margin-left: 100px;
+    }
+    .overlay a {
+        font-size: 23px;
+    }
+    .overlay .closebtn {
+        font-size: 50px;
+        top: 10px;
+        right: 95px;
+    }
+    .main-of-home-page{
+        margin-top: 0;
+        height: 500px;
+        width: 100%;
+    }
+    .go-to-spot{
+        bottom: 80px;
+        left: 30px;
+    }
+    .go-to-spot p{
+        font-size: 17px;
+    }
+    .go-to-spot h1{
+        font-size: 37px;
+    }
+    .go-to-spot button{
+        width: 150px;
+        font-size: 14px;
+    }
+    .sales-board{
+        height: 50px;
+        font-size: 14px;
+        padding-top: 13px;
+        width: 100%;
+    }
+    .sales-board span{
+        padding: 20px;
+    }
+    .eat{
+        flex-direction: column;
+        gap: 0;
+    }
+    .text{
+        width: 100%;
+        height: 400px;
+        padding: 0px 30px;
+    }
+    .T{
+        gap: 30px;
+    }
+    .photo{
+        height: auto;
+        width: 100%;
+    }
+    .text h2{
+        font-size: 40px;
+    }
+    .text h4{
+        font-size: 18px;
+    }
+    .text p{
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .text button{
+        font-size: 14px;
+        padding: 12px 40px;
+    }
+    .eat:nth-child(2) {
+        flex-direction: column-reverse; 
+    }
+    #drop-by{
+        height: 550px;
+    }
+    #drop-by h2{
+        font-size: 35px;
+    }
+    .vr{
+        display: none;
+    }
+    .AAOH{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .AAOH h4{
+        font-size: 24px;
+    }
+    .mini-gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .mg-3 img{
+        display: none;
+    }
+    .mg-1 img, .mg-2 img{
+        width: 50%;
+        height: auto;
+    }    
+    footer{
+        height: 920px;
+        flex-direction: column;
+    }
+    .ftr a{
+        font-size: 40px;
+    }
+    .ftr1{
+        margin-top: 60px;
+    }
+    .input input{
+        width: 270px;
+    }
+    .input button{
+        padding: 7px 30px;
+        font-size: 14px;
+    }  
+    /* This is us page */
+    .title{
+        height: 300px;
+        gap: 20px;
+        padding: 50px;
+    }
+    .title h1{
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    .title h4{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .the-best-bite{
+        flex-direction: column;
+        height: 900px;
+    }
+    .image-container img{
+        width: 100%;
+        height: auto;
+    }
+    .bite{
+        width: 100%;
+        padding: 50px;
+    }
+    .bite-text{
+        gap: 20px;
+    }
+    .bite h2{
+        font-size: 35px;
+    }
+    #bt2{
+        padding-left: 40px;
+    }
+    .bite button{
+        font-size: 14px;
+        padding: 10px 35px;
+    }
+    .banner{
+        height: 70px;
+        font-size: 18px;
+    }    
+    .ic2 img{
+        height: auto;
+    }
+    /* Menu */
+    .menu{
+        height: 3400px;
+    }
+    .breakfast {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    .br-row {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px;
+    }
+    .dish {
+        width: 90%;
+        height: auto; 
+        padding: 20px; 
+        text-align: center; 
+    }
+    .menu h2 {
+        font-size: 28px;
+    }
+    .divider-line::before,
+    .divider-line::after {
+        width: 20%; 
+    }
+    .icon {
+        font-size: 20px;
+    }
+    /* Contact us page */
+    .menu-title{
+        height: 150px;
+        gap: 20px;
+        padding: 50px;
+    }
+    .menu-title h1{
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    .menu-title p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .contact {
+        flex-direction: column;
+        height: auto;
+        padding: 20px; 
+    }
+    .contact::before {
+        display: none; 
+    }
+    .contact-forms, 
+    .contact-info {
+        width: 100%;
+        padding: 20px; 
+        box-sizing: border-box;
+    }
+    .contact-forms > div > div:first-child {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    .contact-forms .in input,
+    .contact-forms .in textarea {
+        width: 100%; 
+    }
+    .contact-forms button {
+        width: 100%; 
+    }
+    .contact-forms{
+        margin: 20px 0;
+    }
+    .contact-info .par {
+        gap: 100px; 
+    }
+    .contact-info .par-1 {
+        gap: 20px; 
+    }
+    .box {
+        width: 100%; 
+        align-items: flex-start; 
+        padding: 10px; 
+        box-sizing: border-box;
+    }
+    .box h4 {
+        font-size: 18px; 
+    }
+    .box p {
+        font-size: 14px; 
+        line-height: 1.5; 
+    }
+    .sc {
+        gap: 10px; 
+        font-size: 18px; 
+    }
+}
