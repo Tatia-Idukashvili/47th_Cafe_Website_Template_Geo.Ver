@@ -297,7 +297,7 @@ footer{
 }
 /* This is us page */
 .title{
-    height: 450px;
+    height: 550px;
     background-color: rgb(251,242,232);
     color: black;
     display: flex; 
@@ -627,7 +627,7 @@ textarea {
         font-size: 17px;
     }
     .go-to-spot h1{
-        font-size: 37px;
+        font-size: 35px;
     }
     .go-to-spot button{
         width: 150px;
@@ -735,7 +735,7 @@ textarea {
     }
     .the-best-bite{
         flex-direction: column;
-        height: 900px;
+        height: 800px;
     }
     .image-container img{
         width: 100%;
@@ -752,7 +752,7 @@ textarea {
         font-size: 35px;
     }
     #bt2{
-        padding-left: 40px;
+        padding-left: 10px;
     }
     .bite button{
         font-size: 14px;
@@ -760,7 +760,8 @@ textarea {
     }
     .banner{
         height: 70px;
-        font-size: 18px;
+        font-size: 16px;
+        text-align: center;
     }    
     .ic2 img{
         height: auto;
@@ -801,7 +802,7 @@ textarea {
         padding: 50px;
     }
     .menu-title h1{
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 0px;
     }
     .menu-title p{
