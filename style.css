@@ -297,7 +297,7 @@ footer{
 }
 /* This is us page */
 .title{
-    height: 450px;
+    height: 300px;
     background-color: rgb(251,242,232);
     color: black;
     display: flex; 
