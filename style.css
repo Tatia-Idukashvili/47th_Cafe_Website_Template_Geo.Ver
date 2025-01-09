@@ -297,7 +297,7 @@ footer{
 }
 /* This is us page */
 .title{
-    height: 550px;
+    height: 450px;
     background-color: rgb(251,242,232);
     color: black;
     display: flex; 
@@ -721,7 +721,7 @@ textarea {
     }  
     /* This is us page */
     .title{
-        height: 300px;
+        height: 400px;
         gap: 20px;
         padding: 50px;
     }
@@ -735,7 +735,7 @@ textarea {
     }
     .the-best-bite{
         flex-direction: column;
-        height: 800px;
+        height: 780px;
     }
     .image-container img{
         width: 100%;
@@ -753,6 +753,7 @@ textarea {
     }
     #bt2{
         padding-left: 10px;
+        padding-bottom: 10px;
     }
     .bite button{
         font-size: 14px;
