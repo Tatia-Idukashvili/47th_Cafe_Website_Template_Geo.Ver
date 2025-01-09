@@ -721,12 +721,12 @@ textarea {
     }  
     /* This is us page */
     .title{
-        height: 400px;
+        height: 500px;
         gap: 20px;
         padding: 50px;
     }
     .title h1{
-        font-size: 40px;
+        font-size: 25px;
         margin-top: 0px;
     }
     .title h4{
@@ -765,7 +765,7 @@ textarea {
         text-align: center;
     }    
     .ic2 img{
-        height: auto;
+        height: 500px;
     }
     /* Menu */
     .menu{
