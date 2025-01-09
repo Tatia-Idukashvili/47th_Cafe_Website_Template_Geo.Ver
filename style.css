@@ -721,7 +721,7 @@ textarea {
     }  
     /* This is us page */
     .title{
-        height: 500px;
+        height: 450px;
         gap: 20px;
         padding: 50px;
     }
@@ -765,7 +765,7 @@ textarea {
         text-align: center;
     }    
     .ic2 img{
-        height: 500px;
+        height: 400px;
     }
     /* Menu */
     .menu{
