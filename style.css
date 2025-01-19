@@ -80,7 +80,7 @@ nav a:hover{
 .main-of-home-page{
     position: relative;
     margin-top: 90px;
-    background-image: url("./Media/Main\ Image.jpg");
+    background-image: url("./Media/Home\ Page/Main\ Image.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -297,7 +297,7 @@ footer{
 }
 /* This is us page */
 .title{
-    height: 300px;
+    height: 400px;
     background-color: rgb(251,242,232);
     color: black;
     display: flex; 
@@ -735,7 +735,7 @@ textarea {
     }
     .the-best-bite{
         flex-direction: column;
-        height: 780px;
+        height: 800px;
     }
     .image-container img{
         width: 100%;
@@ -765,7 +765,7 @@ textarea {
         text-align: center;
     }    
     .ic2 img{
-        height: 400px;
+        height: 390px;
     }
     /* Menu */
     .menu{
